@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fxj.changeViewPosition.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:text="Hello World!"
+         />
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="up"/>
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="down"
+        />
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/up"
+        android:layout_below="@id/up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="left"
+        />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/up"
+        android:layout_below="@id/up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="right"
+        />
+</RelativeLayout>
